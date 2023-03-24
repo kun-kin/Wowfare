@@ -1918,6 +1918,15 @@
 #modal-auth .modal-body .auth-policy a {
   color: #2979ff;
 }
+#modal-auth .modal-dialog {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin: 0;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+}
 @media (min-width: 576px) {
   #modal-auth .modal-dialog {
     max-width: 350px;
@@ -1929,6 +1938,51 @@
 }
 .modal-backdrop.show {
   opacity: 0.8;
+}
+
+#form-data .form-visa {
+  margin: 20px 0px;
+  padding: 10px 0px;
+  box-shadow: 0 0 10px #adadad;
+}
+@media (max-width: 768px) {
+  #form-data .form-visa {
+    box-shadow: none;
+  }
+}
+#form-data .body-visa {
+  padding: 20px 50px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #form-data .body-visa {
+    padding: 20px 15px;
+  }
+}
+#form-data .check-infor {
+  margin: 10px 0px;
+  padding: 15px 15px;
+  border: 5px solid #162d54;
+}
+#form-data #form_payment .form-check-label {
+  position: relative;
+}
+#form-data #form_payment .form-check-label::after {
+  position: absolute;
+  top: 0;
+  left: -14px;
+  font-size: 10px;
+  color: #fff;
+  content: "\f00c";
+  font-family: fontawesome;
+  width: 1em;
+  height: 1em;
+  opacity: 0;
+  visibility: hidden;
+}
+#form-data #form_payment .form-check-input:checked + .form-check-label::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .footer {
@@ -2250,8 +2304,6 @@ a:active, a:focus, a:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-print-color-adjust: exact;
-  color-adjust: exact;
 }
 
 .form-check-input[type=checkbox] {

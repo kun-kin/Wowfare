@@ -1455,6 +1455,13 @@
         }
     }
     .modal-dialog {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        margin: 0;
+        left: 50%;
+        padding: 10px;
+        transform: translate(-50%, -50%);
         @media(min-width: 576px) {
             max-width: 350px;
         }
@@ -1465,5 +1472,50 @@
     background-color: #797979;
     &.show {
         opacity: .8;
+    }
+}
+
+#form-data {
+    .form-visa {
+        margin: 20px 0px;
+        padding: 10px 0px;
+        box-shadow: 0 0 10px rgb(173, 173, 173);
+        @media(max-width: 768px) {
+            box-shadow: none;
+        }
+    }
+    .body-visa {
+        padding: 20px 50px;
+        width: 100%;
+        @media(max-width: 768px) {
+            padding: 20px 15px;
+        }
+    }
+    .check-infor {
+        margin: 10px 0px;
+        padding: 15px 15px;
+        border: 5px solid #162d54;
+    }
+    #form_payment {
+        .form-check-label {
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 0;
+                left: -14px;
+                font-size: 10px;
+                color: #fff;
+                content: "\f00c";
+                font-family: fontawesome;
+                width: 1em;
+                height: 1em;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        .form-check-input:checked+.form-check-label::after {
+            opacity: 1;
+            visibility: visible;
+        }
     }
 }
