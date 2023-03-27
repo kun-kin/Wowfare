@@ -2207,6 +2207,18 @@
     min-height: 670px;
   }
 }
+@media (max-width: 1999px) {
+  .offer-page .offer__content {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 991px) {
+  .offer-page .offer__content {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 40px 0;
+  }
+}
 .offer-page .offer__price {
   flex: 1 0;
   text-align: center;
