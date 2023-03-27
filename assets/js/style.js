@@ -140,36 +140,36 @@ $(document).ready(function() {
 
     $('.btn__add').click(function() {
         var html = `<div class="col-12 mb-4">
-    <div class="row">
-        <div class="col-lg-4">
-            <select name="" id="" class="form-control">
-            <option value="">Form Where </option>
-            <option value="">áddsdsd</option>
-            <option value="">áddsdsd</option>
-            <option value="">áddsdsd</option>
-            <option value="">áddsdsd</option>
-        </select>
-        </div>
-        <div class="col-lg-4">
-            <select name="" id="" class="form-control">
-            <option value="">To Where</option>
-            <option value="">áddsdsd</option>
-            <option value="">áddsdsd</option>
-            <option value="">áddsdsd</option>
-            <option value="">áddsdsd</option>
-        </select>
-        </div>
-        <div class="col-lg-4">
-            <div class="form-feild">
-                <input type="text" class="form-input hasDatepicker" id="date1" placeholder="mm/dd/yy">
-                <label for="" class="form-label">Date</label>
-                <span class="icon">
-                <i class="fa-duotone fa-calendar-days"></i>
-            </span>
+            <div class="row">
+                <div class="col-lg-4">
+                    <select name="" id="" class="form-control">
+                    <option value="">Form Where </option>
+                    <option value="">áddsdsd</option>
+                    <option value="">áddsdsd</option>
+                    <option value="">áddsdsd</option>
+                    <option value="">áddsdsd</option>
+                </select>
+                </div>
+                <div class="col-lg-4">
+                    <select name="" id="" class="form-control">
+                    <option value="">To Where</option>
+                    <option value="">áddsdsd</option>
+                    <option value="">áddsdsd</option>
+                    <option value="">áddsdsd</option>
+                    <option value="">áddsdsd</option>
+                </select>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-feild">
+                        <input type="text" class="form-input hasDatepicker" id="date1" placeholder="mm/dd/yy">
+                        <label for="" class="form-label">Date</label>
+                        <span class="icon">
+                        <i class="fa-duotone fa-calendar-days"></i>
+                    </span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>`;
+        </div>`;
         $('#multicity-11').append(html);
     });
 
@@ -202,6 +202,8 @@ $(document).ready(function() {
         $(this).parents('.option-trip-icon').addClass('is-checked');
         $('.option-trip-icon').not($(this).parents('.option-trip-icon')).removeClass('is-checked');
         $('.option__trip-inner').removeClass('active');
+        var getValue = $(this).parents('label').children('.option-trip-label').text();
+        $('.valueTrip').text(getValue);
     });
 
     $("input[name=opcabin]").click(function() {
@@ -212,6 +214,11 @@ $(document).ready(function() {
         $('.cabin-dropvalue').text(getValue);
 
     });
+
+
+
+
+
 
     // $('#auth-signin').show();
     // $('#auth-signup').hide();
@@ -243,12 +250,12 @@ $(document).ready(function() {
         $('.menu').removeClass('active');
     });
 
-    // $("#open_destination_mobile_wrapper").click(function() {
-    //     if ($(window).width() < 768) {
-    //         $('.form__bookingbar').slideToggle("600");
-    //         $('.booking-now-btn').toggleClass('act');
-    //     }
-    // });
+
+    $("input[name=SearchFormtripType]").click(function() {
+        var valTitle = $(this).attr('data-label');
+        $('.js-trip-type-label').text(valTitle);
+    });
+
 
 
     //hover function
@@ -276,12 +283,14 @@ $(document).ready(function() {
         }
     });
 
-    $('.select-air').select2({
-        tags: true,
-        placeholder: 'Select or Search by Airlines'
-    })
+
 
 });
+
+$('.select-air').select2({
+    tags: true,
+    placeholder: 'Select or Search by Airlines'
+})
 
 const loginText = document.querySelector(".title-text .login");
 const loginForm = document.querySelector("form.login");

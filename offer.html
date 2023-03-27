@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islas Secas</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" /> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="canonical" href="https://wowjs.uk/">
+
+</head>
+
+<body id="home">
+    <div class="wrapper">
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header-wrap">
+                    <div class="header-left">
+                        <button class="header-burger header-item header-btn ">
+                            <i class="fa-regular fa-bars"></i>
+                        </button>
+                        <a href="./index.html" class="logo header-logo header-item header-item--static">
+                            <img src="./assets/images/logo-light.svg" alt="" class="logo-img">
+                        </a>
+                    </div>
+                    <div class="header-content">
+                        <nav class="menu" id="menu">
+                            <div class="menu-wrapper">
+                                <div class="menu-header">
+                                    <div class="menu-btn">
+                                        <div class="menu-btn__txt">Close menu</div>
+                                        <i class="menu-btn__icn fa-light fa-xmark"></i>
+                                    </div>
+                                </div>
+                                <div class="menu-body">
+                                    <div class="menu-body__item">
+                                        <ul class="menu-list">
+                                            <li class="menu-item">
+                                                <a href="" class="menu-link">Car</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="" class="menu-link">Help</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-body__item">
+                                        <ul class="menu-list">
+                                            <li class="menu-item">
+                                                <a href="" class="menu-link">My Trips</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="javascript:;" class="menu-link auth-modal-login" data-target="#modal-auth" data-toggle="modal">Login</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="header-right">
+                        <a class="header-cta" href="tel:+18889463882"><span class="header-cta-text">
+                            Call us for Exclusive Deal </span>
+                            <div class="header-cta-content">
+                                <i class="header-cta-icn fa-solid fa-phone-volume"></i>
+                                <span class="header-cta-phone">+1 888 946-3882</span>
+                            </div>
+                        </a>
+                        <a class="header-item header-sign auth-modal-login" href="javascript:;" data-target="#modal-auth" data-toggle="modal">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="offer-page">
+                <div class="offer">
+                    <div class="offer__content">
+                        <div class="offer-fare">
+                            <div class="offer-fare__descr">
+                                <div class="offer-fare__title">
+                                    Special fare to </div>
+                                <div class="offer-fare__city">
+                                    London </div>
+                                <div class="offer-fare__special"><strong>Limited time offer!</strong> Ends Mar 31 </div>
+                            </div>
+                            <div class="offer__price">
+                                <div class="offer__price-label">from</div>
+                                <div class="offer__price-value"><sup>$</sup><span>
+                            237 </span><sup><a href="/disclaimer" rel="nofollow" data-toggle="modal" data-target="#modal-disclaimer">*</a></sup></div>
+                                <div class="offer__price-old">
+                                    old price <strike>
+                            $287 </strike></div>
+                            </div>
+                        </div>
+                        <div class="search-form quote-form">
+                            <form action="" class="search-form__form">
+                                <div class="option-main">
+                                    <div class="option__trip">
+                                        <button type="button" class="optbtn dropdown-button btn btn-text">
+                                            <span class="valueTrip" id="valueTrip">Round trip</span> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="width: 13px; margin-left: 8px; margin-right: -5px;"><path d="M128 192l128 128 128-128z"></path></svg>
+                                        </button>
+                                        <div class="option__trip-inner">
+                                            <label for="option-trip1" data-opid="roundtrip-1">
+                                                <div class="option-trip-icon is-checked">
+                                                    <input type="radio" name="optrip" id="option-trip1">
+                                                    <span>
+                                                        <svg class="icon-russ" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg>
+                                                        <svg class="icon-russ-checked" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon"><path d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"></path></svg>
+                                                    </span>
+                                                </div>
+                                                <span class="option-trip-label">Round-trip</span>
+                                            </label>
+                                            <label for="option-trip2" data-opid="oneway-1">
+                                                <div class="option-trip-icon">
+                                                    <input type="radio" name="optrip" id="option-trip2">
+                                                    <span>
+                                                        <svg class="icon-russ" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg>
+                                                        <svg class="icon-russ-checked" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon"><path d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"></path></svg>
+                                                    </span>
+                                                </div>
+                                                <span class="option-trip-label">One-way</span>
+                                            </label>
+                                            <label for="option-trip3" data-opid="multicity-1">
+                                                <div class="option-trip-icon">
+                                                    <input type="radio" name="optrip" id="option-trip3">
+                                                    <span>
+                                                        <svg class="icon-russ" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg>
+                                                        <svg class="icon-russ-checked" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon"><path d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"></path></svg>
+                                                    </span>
+                                                </div>
+                                                <span class="option-trip-label">Multi-city</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="option__paxCount">
+                                        <button type="button" class="optbtn dropdown-button btn btn-text">
+                                            <span class="allCount" id="allCount">1</span>&nbsp Adult <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="width: 13px; margin-left: 8px; margin-right: -5px;"><path d="M128 192l128 128 128-128z"></path></svg>
+                                        </button>
+                                        <div class="paxCount-dropmain">
+                                            <div class="paxCount-dropmain__inner">
+                                                <div class="row">
+                                                    <div class="pax-count-label col">
+                                                        <div>Adult</div>
+                                                        <div><span>12+ years</span></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button type="button" id="acm" class="btn btn-light">
+                                                            <i class="fa-regular fa-minus"></i>
+                                                        </button>
+                                                        <span id="adtCount"> 1 </span>
+                                                        <button type="button" id="acp" class="btn btn-light">
+                                                            <i class="fa-regular fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="pax-count-label col">
+                                                        <div>Children</div>
+                                                        <div><span>2-11 years</span></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button type="button" id="ccm" class="btn btn-light">
+                                                            <i class="fa-regular fa-minus"></i>
+                                                        </button>
+                                                        <span id="chdCount"> 0 </span>
+                                                        <button type="button" id="ccp" class="btn btn-light">
+                                                            <i class="fa-regular fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="pax-count-label col">
+                                                        <div>Lap Infants</div>
+                                                        <div><span>Under 2 years</span></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button type="button" id="icm" class="btn btn-light">
+                                                            <i class="fa-regular fa-minus"></i>
+                                                        </button>
+                                                        <span id="infCount"> 0 </span>
+                                                        <button type="button" id="icp" class="btn btn-light">
+                                                            <i class="fa-regular fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <p class="pax-count-note">Note: Customer's age must correspond with the travel date upon booking.</p>
+                                                        <button type="button" class="form-control close-done btn btn-outline-dark">Done</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="option__cabin">
+                                        <button type="button" class="optbtn dropdow-button btn btn-text">
+                                            <span class="cabin-dropvalue">
+                                                Economy
+                                            </span>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="width: 13px; margin-left: 8px; margin-right: -5px;"><path d="M128 192l128 128 128-128z"></path></svg>
+                                        </button>
+                                        <div class="cabin-dropmain">
+                                            <div class="cabin-dropmain__inner">
+                                                <label for="option-cabin1">
+                                                    <div class="option-cabin-icon is-checked">
+                                                        <input type="radio" name="opcabin" id="option-cabin1">
+                                                        <span>
+                                                            <svg class="icon-russ" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg>
+                                                            <svg class="icon-russ-checked" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon"><path d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"></path></svg>
+                                                        </span>
+                                                    </div>
+                                                    <span class="cabin-label-text">Economy</span>
+                                                </label>
+                                                <label for="option-cabin2">
+                                                    <div class="option-cabin-icon">
+                                                        <input type="radio" name="opcabin" id="option-cabin2">
+                                                        <span>
+                                                            <svg class="icon-russ" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg>
+                                                            <svg class="icon-russ-checked" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon"><path d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"></path></svg>
+                                                        </span>
+                                                    </div>
+                                                    <span class="cabin-label-text">Premium</span>
+                                                </label>
+                                                <label for="option-cabin3">
+                                                    <div class="option-cabin-icon">
+                                                        <input type="radio" name="opcabin" id="option-cabin3">
+                                                        <span>
+                                                            <svg class="icon-russ" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg>
+                                                            <svg class="icon-russ-checked" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon"><path d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"></path></svg>
+                                                        </span>
+                                                    </div>
+                                                    <span class="cabin-label-text">Business</span>
+                                                </label>
+                                                <label for="option-cabin4">
+                                                    <div class="option-cabin-icon">
+                                                        <input type="radio" name="opcabin" id="option-cabin4">
+                                                        <span>
+                                                            <svg class="icon-russ" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg>
+                                                            <svg class="icon-russ-checked" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon"><path d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"></path></svg>
+                                                        </span>
+                                                    </div>
+                                                    <span class="cabin-label-text">First-class</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option-wrap-content">
+                                    <div class="opitem" id="roundtrip-1">
+                                        <div class="row mb-4">
+                                            <div class="col-lg-6">
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Form Where </option>
+                                                    <option value="">áddsdsd</option>
+                                                    <option value="">áddsdsd</option>
+                                                    <option value="">áddsdsd</option>
+                                                    <option value="">áddsdsd</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">To Where</option>
+                                                    <option value="">áddsdsd</option>
+                                                    <option value="">áddsdsd</option>
+                                                    <option value="">áddsdsd</option>
+                                                    <option value="">áddsdsd</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-feild">
+                                                    <input type="text" class="form-input hasDatepicker" id="checkIn" placeholder="mm/dd/yy">
+                                                    <label for="" class="form-label">Departure</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-feild">
+                                                    <input type="text" class="form-input hasDatepicker" id="checkOut" placeholder="mm/dd/yy">
+                                                    <label for="" class="form-label">Return</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="opitem" id="oneway-1" style="display: none;">
+                                        <div class="row mb-4">
+                                            <div class="col-lg-6">
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Form Where </option>
+                                                    <option value="">áddsdsd</option>
+                                                    <option value="">áddsdsd</option>
+                                                    <option value="">áddsdsd</option>
+                                                    <option value="">áddsdsd</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">To Where</option>
+                                                    <option value="">áddsdsd</option>
+                                                    <option value="">áddsdsd</option>
+                                                    <option value="">áddsdsd</option>
+                                                    <option value="">áddsdsd</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-feild">
+                                                    <input type="text" class="form-input hasDatepicker" id="date1" placeholder="mm/dd/yy">
+                                                    <label for="" class="form-label">Date</label>
+                                                    <span class="icon">
+                                                        <i class="fa-duotone fa-calendar-days"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="opitem" id="multicity-1" style="display: none;">
+                                        <div class="row mb-4" id="multicity-11">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <select name="" id="" class="form-control">
+                                                        <option value="">Form Where </option>
+                                                        <option value="">áddsdsd</option>
+                                                        <option value="">áddsdsd</option>
+                                                        <option value="">áddsdsd</option>
+                                                        <option value="">áddsdsd</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <select name="" id="" class="form-control">
+                                                        <option value="">To Where</option>
+                                                        <option value="">áddsdsd</option>
+                                                        <option value="">áddsdsd</option>
+                                                        <option value="">áddsdsd</option>
+                                                        <option value="">áddsdsd</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="form-feild">
+                                                            <input type="text" class="form-input hasDatepicker" id="date1" placeholder="mm/dd/yy">
+                                                            <label for="" class="form-label">Date</label>
+                                                            <span class="icon">
+                                                            <i class="fa-duotone fa-calendar-days"></i>
+                                                        </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <select name="" id="" class="form-control">
+                                                        <option value="">Form Where </option>
+                                                        <option value="">áddsdsd</option>
+                                                        <option value="">áddsdsd</option>
+                                                        <option value="">áddsdsd</option>
+                                                        <option value="">áddsdsd</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <select name="" id="" class="form-control">
+                                                        <option value="">To Where</option>
+                                                        <option value="">áddsdsd</option>
+                                                        <option value="">áddsdsd</option>
+                                                        <option value="">áddsdsd</option>
+                                                        <option value="">áddsdsd</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="form-feild">
+                                                            <input type="text" class="form-input hasDatepicker" id="date1" placeholder="mm/dd/yy">
+                                                            <label for="" class="form-label">Date</label>
+                                                            <span class="icon">
+                                                            <i class="fa-duotone fa-calendar-days"></i>
+                                                        </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bk-buttons mb-4">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <button type="button" class="btn__add btn btn-primary">
+                                                        <i class="fa-regular fa-plus"></i>
+                                                    </button>
+                                                    <button type="button" class="btn__del btn btn-primary">
+                                                        <i class="fa-regular fa-minus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-form__row">
+                                    <div class="row">
+                                        <div class="col-lg-6 form-group search-form__phone">
+                                            <input type="text" class="form-input" placeholder="Phone">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <button type="submit" class="btn search-form__btn">Get a quote</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-warning">
+                                    <i class="fa-regular fa-shield-check phone-warning__icn"></i>
+                                    <div class="offer-disclaimer">
+                                        <div class="offer-disclaimer__title">100% Protected. No spam. Ever.</div>
+                                        I agree to provide my phone number and get flight itinerary details over phone or text message by clicking on "Get a quote". No purchase required. We are committed to respecting your <a href="/policy" target="_blank">privacy</a>.
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-banner">
+                    <h2 class="offer-banner__title">
+                        Cheap Flights to <strong>London</strong>
+                    </h2>
+                </div>
+            </section>
+
+            <section class="subscription">
+                <div class="container">
+                    <div class="subscription__heading">
+                        <div class="block-title">Don't Miss a Great Travel Deal Again! </div>
+                        <div class="block-subtitle">
+                            Subscribe to Our Email Promo to Be the First to Get Our Great Deals
+                        </div>
+                    </div>
+                    <form action="" id="subscription-form">
+                        <div class="form-group subscription-input__wrap">
+                            <input type="text" class="subscription-input" placeholder="Enter your email">
+                            <button class="btn subscription-btn">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="container">
+                    <div class="reviews-wrap">
+                        <div class="title-block">
+                            <strong></strong>
+                            <h2>What our Customers Say</h2><span>This underlines our commitment to provide total customer satisfaction</span>
+                        </div>
+                        <div class="reviews-list">
+                            <div class="reviews-list__item">
+                                <div class="reviews-block">
+                                    <div class="reviews-block__avatar">
+                                        <img src="./assets/images/default.png" alt="">
+                                    </div>
+                                    <div class="reviews-block__content">
+                                        <div class="reviews-block__text">
+                                            <p>Even if they are getting back with a call about tickets in 1 hour instead of 15-20 minutes, it's a nice service. The team is helpful and very polite, and I would look for them to find future flight deals.</p>
+                                        </div>
+                                        <div class="reviews-block__author">
+                                            <b class="reviews-block__author-name">Maria Iler</b>
+                                            <div class="review-block__rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-list__item">
+                                <div class="reviews-block">
+                                    <div class="reviews-block__avatar">
+                                        <img src="./assets/images/default.png" alt="">
+                                    </div>
+                                    <div class="reviews-block__content">
+                                        <div class="reviews-block__text">
+                                            <p>Even if they are getting back with a call about tickets in 1 hour instead of 15-20 minutes, it's a nice service. The team is helpful and very polite, and I would look for them to find future flight deals.</p>
+                                        </div>
+                                        <div class="reviews-block__author">
+                                            <b class="reviews-block__author-name">Maria Iler</b>
+                                            <div class="review-block__rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-list__item">
+                                <div class="reviews-block">
+                                    <div class="reviews-block__avatar">
+                                        <img src="./assets/images/default.png" alt="">
+                                    </div>
+                                    <div class="reviews-block__content">
+                                        <div class="reviews-block__text">
+                                            <p>Even if they are getting back with a call about tickets in 1 hour instead of 15-20 minutes, it's a nice service. The team is helpful and very polite, and I would look for them to find future flight deals.</p>
+                                        </div>
+                                        <div class="reviews-block__author">
+                                            <b class="reviews-block__author-name">Maria Iler</b>
+                                            <div class="review-block__rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="container">
+                    <div class="footer-menu row">
+                        <div class="footer-menu__col">
+                            <a href="./index.html" class="footer__logo">
+                                <img src="./assets/images/logo-footer.svg" alt="">
+                            </a>
+                            <div class="footer-bottom__copy">
+                                2023 © Wowfare
+                            </div>
+                            <div class="footer-bottom__copy">
+                                California CST: 2146347
+                            </div>
+                        </div>
+                        <div class="footer-menu__col">
+                            <div class="footer-menu__subtitle">Information</div>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__link">
+                                    <a href="" target="_blank" rel="noopener noreferrer">Help Center</a>
+                                </li>
+                                <li class="footer-menu__link">
+                                    <a href="" target="_blank" rel="noopener noreferrer">Contact </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__col">
+                            <div class="footer-menu__subtitle">Company</div>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__link">
+                                    <a href="" target="_blank" rel="noopener noreferrer">About us</a>
+                                </li>
+                                <li class="footer-menu__link">
+                                    <a href="" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                                </li>
+                                <li class="footer-menu__link">
+                                    <a href="" target="_blank" rel="noopener noreferrer">Term of Use</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__col footer-menu__col--social">
+                            <div class="footer-menu__subtitle">Social Media</div>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__link">
+                                    <span class="social-text">
+                                        Follow us on Social Media to find out about latest updates on our progress </span>
+                                </li>
+                                <li class="footer-menu__link social-block">
+                                    <a href="" rel="nofollow" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" rel="nofollow" target="_blank">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__col footer-menu__col--cards">
+                            <div class="footer-menu__subtitle">We Accept</div>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__link">
+                                    <img src="./assets/images/footer-payment-social.svg" alt="">
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-separator "><span></span></div>
+            <div class="footer-text">
+                <div class="container">
+                    <div class="footer-text__col" id="footer-disclaimer">
+                        *All the fares displayed are in USD and include all taxes, fees and applicable surcharges. All prices are per person, based on economy class weekday travel (Monday - Thursday) from the USA, and depend on the chosen class of service, departure city, airline
+                        and the route (lowest transatlantic fares are usually from the East Coast; transpacific fares - from the West Coast). The maximum allowable stay is six months. Please call our toll-free line for current best prices and additional
+                        details. Savings up to 77% off are indicated off the full unrestricted published airfares of major airlines and may vary based on individual fare rules. Some airlines may impose additional baggage charges. The fares are subject
+                        to seat availability in the corresponding booking inventory. Seats are limited and may not be available on all flights and dates. The fares are non-refundable, non-exchangeable, and non-transferable. The fares and their governing
+                        rules are subject to change without prior notice. Other restrictions may apply. Less restrictive fares available at different rates.
+                    </div>
+                </div>
+            </div>
+            <div class="footer-badges">
+                <div class="container">
+                    <div class="footer-badges__inner">
+                        <div class="footer-badges__image badge-single">
+                            <img src="./assets/images/partner-5efc50ad8061e.svg" alt="">
+                        </div>
+                        <div class="footer-badges__image badge-single">
+                            <img src="./assets/images/partner-5efc50bb20edc.svg" alt="">
+                        </div>
+                        <div class="footer-badges__image badge-single">
+                            <img src="./assets/images/partner-5efc50d06f6ef.svg" alt="">
+                        </div>
+                        <div class="footer-badges__image badge-single">
+                            <img src="./assets/images/partner-60b5f3d19b7c3.svg" alt="">
+                        </div>
+                        <div class="footer-badges__image badge-single">
+                            <img src="./assets/images/partner-62431813b6373.svg" alt="">
+                        </div>
+                        <div class="footer-badges__image badge-single">
+                            <img src="./assets/images/partner-62431e89d1cfc.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <div class="modal fade" id="modal-auth" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa-solid fa-xmark-large"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="auth-signin" class="auth-main-wrap">
+                        <div class="auth__title-block">
+                            <h2 class="auth__title">
+                                Sign In
+                            </h2>
+                            <div class="auth__subtitle">
+                                <span>New user? </span>
+                                <a href="javascript:;" class="js-signup-btn" data-type="sign-up">Create Account</a>
+                            </div>
+                        </div>
+                        <form action="" class="auth-form" id="signin-form" method="post" autocomplete="off">
+                            <div class="form-group">
+                                <label for="" class="control-label">Email</label>
+                                <input type="text" name="accemail" class="form-control" placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <a href="" class="forgot-pass">Forgot password</a>
+                                <label for="" class="control-label">Password</label>
+                                <input type="password" name="accpass" id="" placeholder="Password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="auth-submit">Continue</button>
+                            </div>
+                        </form>
+                        <div class="auth-social">
+                            <div class="auth-social-text">Or sign in width</div>
+                            <div class="auth-social-buttons">
+                                <a href="" class="auth-social-btn auth-link">
+                                    <img src="./assets/images/auth-fb.svg" data-src="./assets/images/auth-fb.svg" alt="" class="lozad">
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="" class="auth-social-btn auth-link">
+                                    <img src="./assets/images/auth-g.svg" data-src="./assets/images/auth-g.svg" alt="" class="lozad">
+                                    <span>Google</span>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="auth-policy">
+                            <span>By creating new account I accept the </span>
+                            <a href="" target="_blank">Terms and Conditions</a> and the
+                            <a href="" target="_blank">
+                            Privacy Policy </a>
+                        </p>
+                    </div>
+                    <div id="auth-signup" class="auth-main-wrap" style="display:none">
+                        <div class="auth__title-block">
+                            <h2 class="auth__title ">
+                                Register new user
+                            </h2>
+                            <div class="auth__subtitle ">
+                                <span>Already have an account? </span>
+                                <a href="javascript:;" class="js-signin-btn " data-type="sign-in ">Sign In</a>
+                            </div>
+                        </div>
+                        <form action=" " class="auth-form " id="signup-form " method="post " autocomplete="off ">
+                            <div class="form-group ">
+                                <label for=" " class="control-label ">Email</label>
+                                <input type="text " name="accemail " class="form-control " placeholder="your@email.com ">
+                            </div>
+                            <div class="form-group ">
+                                <label for=" " class="control-label ">Password</label>
+                                <input type="password " name="accpass " id=" " placeholder="Password " class="form-control ">
+                            </div>
+                            <ul class="pwd-security-check">
+                                <li class="pwd-security-check__item" data-state="prestine " data-rule="lowchar ">
+                                    <i class="pwd-security-check__indicator "></i>
+                                    <span class="pwd-security-check__req ">1 lowercase character</span>
+                                </li>
+                                <li class="pwd-security-check__item " data-state="prestine " data-rule="num "><i class="pwd-security-check__indicator "></i><span class="pwd-security-check__req ">1 number</span></li>
+                                <li class="pwd-security-check__item " data-state="prestine " data-rule="upchar "><i class="pwd-security-check__indicator "></i><span class="pwd-security-check__req ">1 uppercase character</span></li>
+                                <li class="pwd-security-check__item " data-state="prestine " data-rule="min "><i class="pwd-security-check__indicator "></i><span class="pwd-security-check__req ">8 characters min.</span></li>
+                            </ul>
+                            <div class="form-group ">
+                                <button type="submit " class="auth-submit ">Creat Account</button>
+                            </div>
+                        </form>
+                        <div class="auth-social ">
+                            <div class="auth-social-text ">Or sign in width</div>
+                            <div class="auth-social-buttons ">
+                                <a href=" " class="auth-social-btn auth-link ">
+                                    <img src="./assets/images/auth-fb.svg " data-src="./assets/images/auth-fb.svg " alt=" " class="lozad ">
+                                    <span>Facebook</span>
+                                </a>
+                                <a href=" " class="auth-social-btn auth-link ">
+                                    <img src="./assets/images/auth-g.svg " data-src="./assets/images/auth-g.svg " alt=" " class="lozad ">
+                                    <span>Google</span>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="auth-policy ">
+                            <span>By creating new account I accept the </span>
+                            <a href=" " target="_blank ">Terms and Conditions</a> and the
+                            <a href=" " target="_blank ">
+                            Privacy Policy </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery-3.6.0.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js "></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js "></script>
+    <script src="./assets/js/style.js "></script>
+    <script src="./assets/js/slide.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
+
+</html>
